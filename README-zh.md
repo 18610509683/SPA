@@ -9,9 +9,11 @@
             app.vue
 ```            
 ## 常用实用文档
-[如何为开发项目编写规范的README文件（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
+[README文件编写（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
 [git安装程序镜像](https://npm.taobao.org/mirrors/git-for-windows/)
 [在线3D翻书效果](https://www.yunzhan365.com/)
+[curl命令大全](https://www.cnblogs.com/cangqinglang/p/10881423.html)
+[cmd乱码问题](https://www.cnblogs.com/Gent-Wang/p/9639001.html)
 ## 使用方法
 
 1. 步骤1
