@@ -10,6 +10,7 @@
 ```            
 ## markdown语法基础
 [如何为开发项目编写规范的README文件（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
+[git安装程序镜像](https://npm.taobao.org/mirrors/git-for-windows/)
 ## 使用方法
 
 1. 步骤1
