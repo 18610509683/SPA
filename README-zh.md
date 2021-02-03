@@ -8,6 +8,8 @@
     └───T0xCA
             app.vue
 ```            
+## markdown语法基础
+[如何为开发项目编写规范的README文件（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
 ## 使用方法
 
 1. 步骤1
