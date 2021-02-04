@@ -33,6 +33,9 @@
 [Xtiper弹窗插件](http://img.su1018.cn/%E6%BC%94%E7%A4%BA/1/index.html#msg)
 [clipboard.js](http://www.clipboardjs.cn/)
 [看板娘](https://www.jianshu.com/p/3a6342e16e57)
+[chart.js](https://chartjs.bootcss.com/docs/)
+[weex常见问题](https://www.jianshu.com/p/e16c4ef1c505?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
+[showDoc官网](https://www.showdoc.com.cn/)
 
 ## 使用方法
 
