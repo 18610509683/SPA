@@ -3,6 +3,7 @@
 ## 常用实用文档
 [生成SSH key](https://blog.csdn.net/xb12369/article/details/78682018)
 [README文件编写（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
+[README语法](https://www.jianshu.com/p/fff8a9d9eaad)
 [git安装程序镜像](https://npm.taobao.org/mirrors/git-for-windows/)
 [在线3D翻书效果](https://www.yunzhan365.com/)
 [curl命令大全](https://www.cnblogs.com/cangqinglang/p/10881423.html)
