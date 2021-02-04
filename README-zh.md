@@ -14,6 +14,15 @@
 [在线3D翻书效果](https://www.yunzhan365.com/)
 [curl命令大全](https://www.cnblogs.com/cangqinglang/p/10881423.html)
 [cmd乱码问题](https://www.cnblogs.com/Gent-Wang/p/9639001.html)
+[微信小程序开发文档](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/IsoDep.html)
+[小程序问答](https://www.wxopen.club/?tab=ask)
+[后台管理系统大全](http://www.bootstrapmb.com/tag/vuehoutai)
+[ASCII编码转换](https://www.qqxiuzi.cn/bianma/ascii.htm)
+[微信小程序+人脸识别](https://www.jianshu.com/p/fdcbbc8466f3)
+[百度人脸检测](https://ai.baidu.com/tech/face/detect)
+[vue后台管理搭建](https://juejin.cn/post/6844903476661583880#heading-16)
+[Element文档](https://element.eleme.cn/#/zh-CN)
+[vue-cli](https://cli.vuejs.org/zh/guide/mode-and-env.html#%E6%A8%A1%E5%BC%8F)
 ## 使用方法
 
 1. 步骤1
