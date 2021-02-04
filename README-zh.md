@@ -1,5 +1,7 @@
 ## git使用文档
-
+···math
+f(x)=\int_{2}^{+\infty} \frac{dx}{x\cdot \sqrt[3]{x^2-3x+2}}
+···
 ## 常用实用文档
 [生成SSH key](https://blog.csdn.net/xb12369/article/details/78682018)
 [README文件编写（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
