@@ -9,6 +9,7 @@
             app.vue
 ```            
 ## 常用实用文档
+[生成SSH key](https://blog.csdn.net/xb12369/article/details/78682018)
 [README文件编写（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
 [git安装程序镜像](https://npm.taobao.org/mirrors/git-for-windows/)
 [在线3D翻书效果](https://www.yunzhan365.com/)
@@ -23,6 +24,16 @@
 [vue后台管理搭建](https://juejin.cn/post/6844903476661583880#heading-16)
 [Element文档](https://element.eleme.cn/#/zh-CN)
 [vue-cli](https://cli.vuejs.org/zh/guide/mode-and-env.html#%E6%A8%A1%E5%BC%8F)
+[腾讯云开发者手册](https://cloud.tencent.com/developer/section/1489874)
+[v-chart文档](https://v-charts.js.org/#/)
+[jquery之家](http://www.htmleaf.com/)
+[islider](http://eux.baidu.com/iSlider/demo/index_chinese.html#initialized)
+[jquery插件库](https://www.jq22.com/search?seo=%e6%89%8b%e6%9c%ba%e4%b8%8a%e4%b8%8b%e6%bb%91%e5%b1%8f&PageNo=4)
+[vue-cli2.0配置多页面](https://blog.csdn.net/weixin_43932245/article/details/98777598)
+[Xtiper弹窗插件](http://img.su1018.cn/%E6%BC%94%E7%A4%BA/1/index.html#msg)
+[clipboard.js](http://www.clipboardjs.cn/)
+[看板娘](https://www.jianshu.com/p/3a6342e16e57)
+
 ## 使用方法
 
 1. 步骤1
