@@ -1,13 +1,5 @@
 ## git使用文档
-```
-│   list.txt
-│   README-zh.md
-│   README.md
-│   
-└───src
-    └───T0xCA
-            app.vue
-```            
+
 ## 常用实用文档
 [生成SSH key](https://blog.csdn.net/xb12369/article/details/78682018)
 [README文件编写（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
