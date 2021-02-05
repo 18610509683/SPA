@@ -1,5 +1,6 @@
 ## git使用文档
 [多个远程仓库](https://segmentfault.com/a/1190000011294144)
+>git push origin --delete develop 删除远程库develop分支
 ## 常用实用文档
 [生成SSH key](https://blog.csdn.net/xb12369/article/details/78682018)
 [README文件编写（windows）](https://www.cnblogs.com/wj-1314/p/8547763.html)
