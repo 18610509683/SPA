@@ -7,3 +7,128 @@
 	<body>
 	</body>
 </html>
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function RandomNumBoth(Min,Max){
+            var Range = Max - Min;
+            var Rand = Math.random();
+            var num = Min + Math.round(Rand * Range); //四舍五入
+            return num;
+}
+var data=(function(){
+	var ar=[]
+	for(var i=0;i<300;i++){
+		var res=RandomNumBoth(1000,9999);
+		ar.push(res)
+	}
+	return ar;
+}())
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	function getAll(n){
+		var arr=[]
+		for(var i=0;i<10;i++){
+			for(var j=0;j<10;j++){
+				if(i!=j){
+					var str=''+i+i+'+'+j;
+					arr.push(str)
+				}
+			}
+		}
+		return arr;
+		console.log(arr)
+	}
+	var all2=getAll();
+
+	
+
+
+	function testData(all2,data){
+		var obj={}
+		all2.map((v,k)=>{
+			var s=v.split('+');
+			for(var i=0;i<data.length;i++){
+				var vv=data[i].toString().split('').sort().join('');
+				if(vv.indexOf(s[0])!=-1&&vv.indexOf(s[1])!=-1){
+					if(obj[v]){
+						obj[v].push(vv)
+					}else{
+						obj[v]=[];
+						obj[v].push(vv)
+					}
+				}
+			}
+		})
+		console.log(obj)
+	}
+	testData(all2,data)
+</script>
