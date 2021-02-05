@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="js/vue-2.2.0.min.js"></script>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+		</script>
+		<script src="js/all.js"></script>
+	</head>
+	<style>
+		.inputBox {
+			margin-top: 20px;
+		}
+	</style>
+
+	<body>
+		<div id="app">
+			<div class="inputBox">
+				<label for="val">3个：</label>
+				<input onchange="changed(this.value,3)" type="text" name="" id="val" value="012" />
+				<textarea v-model="a" readonly=true></textarea>
+				<div for="left3">剩余</div>
+				<textarea id="left3" v-model="c" readonly=true></textarea>
+			</div>
+			<div class="inputBox">
+				<label for="va3d">特殊H4：</label>
+				<textarea id="va3d" v-model="s" readonly=true></textarea>
+			</div>
+			<div class="inputBox">
+				<label for="va3d">单个：</label>
+				<input onchange="getTow(this.value)" type="text" name="" id="va3d" value="8" />
+				<textarea id="va3d" v-model="d3" readonly=true></textarea>
+				<div>个数：{{len1}}</div>
+				<div for="left3">特殊</div>
+				<textarea id="left33" v-model="left3" readonly=true></textarea>
+				<div>个数：{{len2}}</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script>
+	function getCs(str, ar) {
+		var cs = 0;
+		for(var i = 0; i < 4; i++) {
+			if(ar.indexOf(str[i]) != -1) {
+				cs += 1;
+			}
+		}
+		return cs
+	}
+
+	function testtp(str) {
+		var max = 0;
+		var res = []
+		var obj = {}
+		for(var i = 0; i < 4; i++) {
+			if(res.indexOf(str[i]) == -1) {
+				res.push(str[i])
+			}
+		}
+		res = res.sort().join('')
+		if(res.length < 3) {
+			return true
+		}
+		return false;
+	}
+	var app = new Vue({
+		el: '#app',
+		data() {
+			return {
+				a: '012',
+				b: '0123',
+				c: '0022',
+				d: '0033',
+				s: '34',
+				d3: '',
+				left3:'',
+				len1:0,
+				len2:0
+			}
+		},
+		methods: {
+			changed3d() {
+				var ar = '9876543210'.split('')
+				var arr = [];
+				var len = 10;
+				var arr2 = [];
+				for(var i = 0; i < len; i++) {
+					for(var j = 0; j < len; j++) {
+						for(var k = 0; k < len; k++) {
+							for(var m = 0; m < len; m++) {
+								let tem = i + '' + j + '' + k + '' + m;
+								var res = testtp(tem);
+								if(res) {
+									arr2.push(tem)
+								}
+							}
+						}
+					}
+				}
+				console.log(arr2.length)
+				var str2 = arr2.toString();
+				this.s = str2;
+			},
+			getTow(){
+				
+			}
+		},
+		mounted() {
+			this.changed3d()
+		}
+	})
+	var el = document.querySelector('#val')
+	console.log(el)
+
+	function changed(val, n) {
+		val = val.trim();
+		console.log(val.length)
+		getPl(val, n)
+	}
+
+	function getPl(abc, n) {
+		var ar = abc.split('');
+		let [a, b, c] = ar;
+		var arr = [];
+		var len = 10;
+		var arr2 = [];
+		for(var i = 0; i < len; i++) {
+			for(var j = 0; j < len; j++) {
+				for(var k = 0; k < len; k++) {
+					for(var m = 0; m < len; m++) {
+						let tem = i + '' + j + '' + k + '' + m;
+						var cs = getCs(tem, ar)
+						if(cs >= 3) {
+							arr.push(tem);
+							if(cs == 4) {
+								arr2.push(tem)
+							}
+						}
+					}
+				}
+			}
+		}
+		var str = arr.toString();
+		var str2 = arr2.toString();
+		if(n == 3) {
+			app.$data.a = str;
+			app.$data.c = str2;
+		} else if(n == 4) {
+			app.$data.b = str;
+			app.$data.d = str2;
+		}
+		console.log(arr.length, arr2.length)
+	}
+
+	//	var getQpl = function(a, b, c) {
+	//		var str0 = '' + a + a + c + b + b;
+	//		var str1 = '' + a + b + c + a + b;
+	//		var str2 = '' + a + b + c + b + a;
+	//		var str3 = '' + b + a + c + a + b;
+	//		var str4 = '' + b + a + c + b + a;
+	//		var str5 = '' + b + b + c + a + a;
+	//		var ar = [str1, str4]
+	//		return ar
+	//		return ar.join(',')
+	//	}
+	//	var temp = []
+	//	for(var i = 0; i < 10; i++) {
+	//		for(var j = 9; j >= 0; j--) {
+	//			for(var k = j - 1; k >= 0; k--) {
+	//				if(i != j && j != k && i != k) {
+	//					var tem = getQpl(j, k, i);
+	//					temp = temp.concat(tem)
+	//				}
+	//			}
+	//		}
+	//	}
+	//	app.$data.d3 = temp;
+	function gettwoMore(n){
+		var arr=[];
+		var ar=all;
+		ar.map((v,k)=>{
+			var cs=0;
+			for(var i=0;i<4;i++){
+				if(n.indexOf(v[i])!=-1){
+					cs+=1;					
+				}
+			}
+			if(cs>=2){
+				arr.push(v)
+			}
+		})
+		return arr
+	}
+	function gettsh(str,n){
+		var res = []
+		for(var i = 0; i < 4; i++) {
+			if(res.indexOf(str[i]) == -1) {
+				res.push(str[i])
+			}
+		}
+		res = res.sort().join('')
+		if(res.length < 3) {
+			for(var k=0;k<n.length;k++){
+				if(res.indexOf(n[k])!=-1){
+					return true				
+				}				
+			}
+		}
+		return false;
+	}
+
+	
+	function getThreeMore(n){
+		var ar=all;
+		var arr=[]
+		ar.map((v,k)=>{
+			var r=gettsh(v,n);
+			if(r){
+				arr.push(v)
+			}
+		})
+		return arr
+	}
+	function getTow(n){
+		var r1=gettwoMore(n)
+		var r2=getThreeMore(n)	
+		app.$data.len1 = r1.length;
+		app.$data.len2 = r2.length;
+		r1=r1.join(',')
+
+		app.$data.d3 = r1;
+		app.$data.left3 = r2;
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	function getAll(){
+		
+	}
+</script>
